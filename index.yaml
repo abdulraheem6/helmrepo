@@ -1,0 +1,25 @@
+apiVersion: v1
+entries:
+  grafana:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-08-21T16:32:40.956155919Z"
+    description: A Helm chart for Kubernetes
+    digest: ac3058f2cbb6487a7478a15c358fdaa1c92043fb046fae70c126651d3c182814
+    name: grafana
+    type: application
+    urls:
+    - grafana/grafana-0.1.0.tgz
+    version: 0.1.0
+  graphite:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-08-21T16:32:40.955662017Z"
+    description: A Helm chart for Kubernetes
+    digest: 06b740c954064758f0e163f0625d208c20b64cedb8172c360af06469e73dc680
+    name: graphite
+    type: application
+    urls:
+    - graphite-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-08-21T16:32:40.954988361Z"
