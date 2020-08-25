@@ -30,5 +30,11 @@ pipeline {
       }
     }
 
+    stage('helminstall') {
+      steps {
+        sh 'helm install mystable/testchart'
+      }
+    }
+
   }
 }
