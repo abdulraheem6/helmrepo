@@ -24,5 +24,11 @@ pipeline {
       }
     }
 
+    stage('helmcreate') {
+      steps {
+        sh 'helm create mystable/testchart'
+      }
+    }
+
   }
 }
