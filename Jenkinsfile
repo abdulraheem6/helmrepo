@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('helm chart') {
       steps {
-        sh 'pwd;whoami'
+        sh '/usr/local/bin/helm list'
       }
     }
 
