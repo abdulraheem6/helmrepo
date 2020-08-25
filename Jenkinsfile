@@ -26,7 +26,7 @@ pipeline {
 
     stage('helmcreate') {
       steps {
-        sh 'helm create mystable/testchart'
+        sh 'mkdir mystable;helm create mystable/testchart'
       }
     }
 
