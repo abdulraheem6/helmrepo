@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('helm chart') {
       steps {
-        sh 'helm list'
+        sh '/usr/local/bin/helm list'
       }
     }
 
