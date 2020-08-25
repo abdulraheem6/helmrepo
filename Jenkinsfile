@@ -35,6 +35,7 @@ pipeline {
         stage('helminstall') {
           steps {
             sh 'helm install blue-ocean-helm mystable/testchart'
+            unstable 'stable'
           }
         }
 
