@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('helm chart') {
       steps {
-        sh '/sbin/helm list'
+        sh 'pwd;whoami'
       }
     }
 
