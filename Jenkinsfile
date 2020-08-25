@@ -31,8 +31,19 @@ pipeline {
     }
 
     stage('helminstall') {
-      steps {
-        sh 'helm install blue-ocean-helm mystable/testchart'
+      parallel {
+        stage('helminstall') {
+          steps {
+            sh 'helm install blue-ocean-helm mystable/testchart'
+          }
+        }
+
+        stage('bypass') {
+          steps {
+            echo 'hello'
+          }
+        }
+
       }
     }
 
