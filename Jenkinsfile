@@ -9,12 +9,18 @@ pipeline {
           }
         }
 
-        stage('') {
+        stage('error') {
           steps {
             sh '/usr/local/bin/helm repo list'
           }
         }
 
+      }
+    }
+
+    stage('adding repo') {
+      steps {
+        sh '/usr/local/bin/helm repo add stable https://kubernetes-charts.storage.googleapis.com'
       }
     }
 
