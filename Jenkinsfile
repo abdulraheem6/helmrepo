@@ -32,7 +32,7 @@ pipeline {
 
     stage('helminstall') {
       steps {
-        sh 'helm install mystable/testchart'
+        sh 'helm install blue-ocean-helm mystable/testchart'
       }
     }
 
